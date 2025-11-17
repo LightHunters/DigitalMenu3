@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+    --color-light-beige:#ECDFC7;
+    --color-pale-beige:#EDE2CC;
+    --color-soft-linen:#EFE5D2;
+    --color-cream-sand:#F1E8D7;
+    --color-warm-lvory:#F3EBDD;
+
+    --color-Muted-Rosewood:#A58B81;
+    --color-Pale-Cocoa:#BFACA5;
+    --color-brown-chestnut:#7F5A4B;
+    --color-deep-chestnut:#725143;
+    --color-Dark-Umber:#65483C;
+    --color-Rich-Walnut:#583F34;
+    --color-Coffee-Bean:#4C362D;
+    --color-Dark-Mocha:#3F2D25;
+
+    --font-pacifico:"Pacifico", cursive;
+    --font-caveat:"Caveat", cursive;
+    
+}
+@utility bg_desktop {
+  background-image: url("./assets/desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+@utility bg_mobail {
+  background-image: url("./assets/mobail.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+
