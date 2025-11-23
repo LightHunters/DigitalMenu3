@@ -1,26 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Vazirmatn:wght@100..900&display=swap");
 @import "tailwindcss";
 
-
 @theme {
-    --color-light-beige:#ECDFC7;
-    --color-pale-beige:#EDE2CC;
-    --color-soft-linen:#EFE5D2;
-    --color-cream-sand:#F1E8D7;
-    --color-warm-lvory:#F3EBDD;
+  --color-light-beige: #ecdfc7;
+  --color-pale-beige: #ede2cc;
+  --color-soft-linen: #efe5d2;
+  --color-cream-sand: #f1e8d7;
+  --color-warm-lvory: #f3ebdd;
 
-    --color-Muted-Rosewood:#A58B81;
-    --color-Pale-Cocoa:#BFACA5;
-    --color-brown-chestnut:#7F5A4B;
-    --color-deep-chestnut:#725143;
-    --color-Dark-Umber:#65483C;
-    --color-Rich-Walnut:#583F34;
-    --color-Coffee-Bean:#4C362D;
-    --color-Dark-Mocha:#3F2D25;
+  --color-Muted-Rosewood: #a58b81;
+  --color-Pale-Cocoa: #bfaca5;
+  --color-brown-chestnut: #7f5a4b;
+  --color-deep-chestnut: #725143;
+  --color-Dark-Umber: #65483c;
+  --color-Rich-Walnut: #583f34;
+  --color-Coffee-Bean: #4c362d;
+  --color-Dark-Mocha: #3f2d25;
 
-    --font-pacifico:"Pacifico", cursive;
-    --font-caveat:"Caveat", cursive;
-    
+  --font-pacifico: "Pacifico", cursive;
+  --font-caveat: "Caveat", cursive;
+  --font-vazir: "Vazirmatn", sans-serif;
 }
 @utility bg_desktop {
   background-image: url("./assets/desktop.jpg");
@@ -35,8 +34,6 @@
   background-position: bottom;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
-
-
