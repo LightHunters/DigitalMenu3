@@ -22,13 +22,13 @@
   --font-vazir: "Vazirmatn", sans-serif;
 }
 @utility bg_desktop {
-  background-image: url("./assets/desktop.jpg");
+  background-image: url("./desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 @utility bg_mobail {
-  background-image: url("./assets/mobail.jpg");
+  background-image: url("./mobail.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -37,3 +37,4 @@
 ::-webkit-scrollbar {
   display: none;
 }
+

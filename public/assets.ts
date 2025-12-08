@@ -1,6 +1,37 @@
+import espresso from "./espresso.jpg";
+import Latte from "./Latte.jpg";
+import Cappuccino from "./Cappuccino.jpg";
+import Mocha from "./Mocha.jpg";
+import Americano from "./Americano.jpg";
+import FlatWhite from "./FlatWhite.jpg";
+import Cortado from "./Cortado.jpg";
+import IcedLatte from "./IcedLatte.jpg";
+import IcedMocha from "./IcedMocha.jpg";
+import ChocolateShake from "./ChocolateShake.jpg";
+import VanillaShake from "./VanillaShake.jpg";
+import StrawberryShake from "./StrawberryShake.jpg";
+import BananaSmoothie from "./BananaSmoothie.jpg";
+import StrawberrySmoothie from "./StrawberrySmoothie.jpg";
+import MangoSmoothie from "./MangoSmoothie.jpg";
+import ChocolateCake from "./ChocolateCake.jpg";
+import Cheesecake from "./Cheesecake.jpg";
+import Brownie from "./Brownie.jpg";
+import BlueberryMuffin from "./BlueberryMuffin.jpg";
+import HamAndCheeseSandwich from "./HamAndCheeseSandwich.jpg";
+import ChickenSandwich  from "./ChickenSandwich.jpg";
+import TurkeySandwich  from "./TurkeySandwich.jpg";
+import CheesePanini from "./CheesePanini.jpg";
+import CaesarSalad from "./CaesarSalad.jpg";
+import GreenSalad from "./GreenSalad.jpg";
+import PastaSalad from "./PastaSalad.jpg";
+import TomatoSoup from "./TomatoSoup.jpg";
+import Lemonade from "./Lemonade.jpg";
+import Soda from "./Soda.jpg";
+
 export const product = [
   {
     name: "Espresso",
+    image: espresso,
     price: 2.5,
     category: "Hot Drinks",
     taste:
@@ -10,6 +41,8 @@ export const product = [
   },
   {
     name: "Latte",
+    image: Latte,
+
     price: 3.5,
     category: "Hot Drinks",
     taste:
@@ -19,6 +52,8 @@ export const product = [
   },
   {
     name: "Cappuccino",
+    image: Cappuccino,
+
     price: 3.0,
     category: "Hot Drinks",
     taste:
@@ -28,6 +63,8 @@ export const product = [
   },
   {
     name: "Mocha",
+    image: Mocha,
+
     price: 4.0,
     category: "Hot Drinks",
     taste:
@@ -37,6 +74,8 @@ export const product = [
   },
   {
     name: "Americano",
+    image: Americano,
+
     price: 2.8,
     category: "Hot Drinks",
     taste:
@@ -46,6 +85,8 @@ export const product = [
   },
   {
     name: "Flat White",
+    image: FlatWhite,
+
     price: 3.2,
     category: "Hot Drinks",
     taste:
@@ -55,6 +96,8 @@ export const product = [
   },
   {
     name: "Cortado",
+    image: Cortado,
+
     price: 3.5,
     category: "Hot Drinks",
     taste:
@@ -64,6 +107,8 @@ export const product = [
   },
   {
     name: "Iced Latte",
+    image: IcedLatte,
+
     price: 4.0,
     category: "Cold Drinks",
     taste:
@@ -73,6 +118,8 @@ export const product = [
   },
   {
     name: "Iced Mocha",
+    image: IcedMocha,
+
     price: 4.5,
     category: "Cold Drinks",
     taste:
@@ -82,6 +129,8 @@ export const product = [
   },
   {
     name: "Chocolate Shake",
+    image: ChocolateShake,
+
     price: 5.0,
     category: "Cold Drinks",
     taste:
@@ -91,6 +140,8 @@ export const product = [
   },
   {
     name: "Vanilla Shake",
+    image: VanillaShake,
+
     price: 4.8,
     category: "Cold Drinks",
     taste:
@@ -100,6 +151,8 @@ export const product = [
   },
   {
     name: "Strawberry Shake",
+    image: StrawberryShake,
+
     price: 4.8,
     category: "Cold Drinks",
     taste:
@@ -109,6 +162,8 @@ export const product = [
   },
   {
     name: "Banana Smoothie",
+    image: BananaSmoothie,
+
     price: 4.2,
     category: "Cold Drinks",
     taste:
@@ -118,6 +173,8 @@ export const product = [
   },
   {
     name: "Strawberry Smoothie",
+    image: StrawberrySmoothie,
+
     price: 4.5,
     category: "Cold Drinks",
     taste:
@@ -127,6 +184,8 @@ export const product = [
   },
   {
     name: "Mango Smoothie",
+    image: MangoSmoothie,
+
     price: 4.7,
     category: "Cold Drinks",
     taste:
@@ -136,6 +195,8 @@ export const product = [
   },
   {
     name: "Chocolate Cake",
+    image: ChocolateCake,
+
     price: 3.5,
     category: "Desserts",
     taste:
@@ -145,6 +206,8 @@ export const product = [
   },
   {
     name: "Cheesecake",
+    image: Cheesecake,
+
     price: 4.2,
     category: "Desserts",
     taste:
@@ -154,6 +217,8 @@ export const product = [
   },
   {
     name: "Brownie",
+    image: Brownie,
+
     price: 3.0,
     category: "Desserts",
     taste:
@@ -163,6 +228,8 @@ export const product = [
   },
   {
     name: "Blueberry Muffin",
+    image: BlueberryMuffin,
+
     price: 2.5,
     category: "Desserts",
     taste:
@@ -172,6 +239,8 @@ export const product = [
   },
   {
     name: "Ham & Cheese Sandwich",
+    image: HamAndCheeseSandwich,
+
     price: 5.0,
     category: "Snacks",
     taste:
@@ -181,6 +250,8 @@ export const product = [
   },
   {
     name: "Chicken Sandwich",
+    image: ChickenSandwich,
+
     price: 5.5,
     category: "Snacks",
     taste:
@@ -190,6 +261,8 @@ export const product = [
   },
   {
     name: "Turkey Sandwich",
+    image: TurkeySandwich,
+
     price: 5.0,
     category: "Snacks",
     taste:
@@ -199,6 +272,8 @@ export const product = [
   },
   {
     name: "Cheese Panini",
+    image: CheesePanini,
+
     price: 6.0,
     category: "Snacks",
     taste:
@@ -208,6 +283,8 @@ export const product = [
   },
   {
     name: "Caesar Salad",
+    image: CaesarSalad,
+
     price: 7.0,
     category: "Salads",
     taste:
@@ -217,6 +294,8 @@ export const product = [
   },
   {
     name: "Green Salad",
+    image: GreenSalad,
+
     price: 5.0,
     category: "Salads",
     taste:
@@ -226,6 +305,8 @@ export const product = [
   },
   {
     name: "Pasta Salad",
+    image: PastaSalad,
+
     price: 6.0,
     category: "Salads",
     taste:
@@ -235,6 +316,8 @@ export const product = [
   },
   {
     name: "Tomato Soup",
+    image: TomatoSoup,
+
     price: 4.0,
     category: "Soups",
     taste:
@@ -242,16 +325,11 @@ export const product = [
     customer_satisfaction_percentage: 90,
     id: "27",
   },
-  {
-    name: "Mineral Water",
-    price: 1.5,
-    category: "Drinks",
-    taste: "Neutral, crisp, refreshing. Pure water with a clean, fresh taste.",
-    customer_satisfaction_percentage: 95,
-    id: "28",
-  },
+
   {
     name: "Lemonade",
+    image: Lemonade,
+
     price: 3.0,
     category: "Drinks",
     taste:
@@ -261,6 +339,7 @@ export const product = [
   },
   {
     name: "Soda",
+    image: Soda,
     price: 2.5,
     category: "Drinks",
     taste:

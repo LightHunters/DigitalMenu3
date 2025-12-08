@@ -1,4 +1,4 @@
-import { product } from "../assets/assets.ts";
+import { product } from "../../public/assets.ts";
 import Category from "./Category.tsx";
 
 function ListMenu() {
