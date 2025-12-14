@@ -1,65 +1,85 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { FcLike } from "react-icons/fc";
 
 interface itemType {
   image: any;
   id: string;
   name: string;
   price: number;
+  taste: string;
+  customer_satisfaction_percentage: number;
 }
 
-function Product({ image, id, name, price }: itemType) {
-  const timeline = gsap.timeline({ direction: 0.2,paused: true });
+function Product({
+  image,
+  id,
+  name,
+  price,
+  taste,
+  customer_satisfaction_percentage,
+}: itemType) {
+  const timeline = gsap.timeline({ direction: 1, paused: true });
   useGSAP(() => {
+    gsap.set(`.img${id}`, {
+      width: "25%",
+    });
+
     timeline
-      .to(`.line${id}`, {
-        width: "0",
-      }).to(`.p${id}`,{fontSize:25},'-=.4')
+      .to(`.price1${id}`, { opacity: 0 })
       .to(
         `.img${id}`,
         {
-          width: 60
+          width:"60%",
+          borderRadius: 4,
         },
         "-=.5"
-      ).to(`.price${id}`,{
-        paddingRight:30
-      },"-=.5")
-      .to(`.div${id}`, {
-        color: "#ffffff",
-        backgroundColor: "#583f34",
-        flexWrap:'wrap'
-      },"-=.2")
+      )
+      .to(`.div${id}`, { boxShadow: "0px 6px 6px 5px #583f34 " }, "-=.3")
+      .to(`.taste${id}`, {
+        height: 95,
+      })
+      .to(`.price2${id}`, { height: 32 }, "-=.2");
   }, []);
 
   return (
     <div
-      onMouseEnter={() => {
+      onClick={() => {
         timeline.play();
       }}
       onMouseLeave={() => {
         timeline.reverse();
       }}
-      onTouchStart={() => {
-        timeline.play();
-      }}
-      onTouchEnd={() => {
-        timeline.reverse();
-      }}
-      key={id}
-      className={`div${id} overflow-hidden flex items-center gap-2 justify-between rounded  text-Dark-Mocha hover:shadow-Dark-Mocha hover:shadow-[0px_5px_4px]`}
+      // onTouchStart={() => {
+      //   timeline.play();
+      // }}
+      // onTouchEnd={()=>timeline.reverse()}
+      className={`div${id}  bg-Rich-Walnut/80 text-white p-2 rounded flex items-center gap-3 cursor-pointer`}
     >
-      <img
-        src={image}
-        className={`img${id} w-0  border-r-2 border-white `}
-        alt=""
-      />
-      <p className={`p${id} text-center min-w-fit text-lg font-medium`}>
-        {name}
-      </p>
-      <div className={`line${id} h-[1px] w-[90vw] bg-black`} />
-      <p className={`price${id} text-end text-lg min-w-fit font-medium`}>
-        $ {price}
-      </p>
+      <div
+        className={`img${id} overflow-hidden rounded-2xl border-2 border-Dark-Umber `}
+      >
+        <img src={image} alt={name} className={`w-full h-full object-center`} />
+      </div>
+
+      <div className={`description${id} w-[73%] items-center`}>
+        <div className="flex items-center justify-between">
+          <h3 className="text-2xl ">{name}</h3>
+          <p className={`price1${id} text-2xl pr-4 `}>${price}</p>
+        </div>
+
+        <div className={`taste${id} h-0 overflow-hidden my-auto`}>
+          <p className={` text-[16px] font-caveat`}>{taste}</p>
+        </div>
+
+        <div className={`price2${id} flex items-center overflow-hidden h-0`}>
+          <div className="flex items-center gap-2 md:text-2xl pr-4">
+            <FcLike className="md:size-5 size-2.5" />
+            <p className="">{customer_satisfaction_percentage}%</p>
+          </div>
+          <p className="md:text-2xl ">${price}</p>
+        </div>
+      </div>
     </div>
   );
 }
