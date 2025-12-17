@@ -33,6 +33,11 @@
   background-size: cover;
   background-position: bottom;
 }
+@layer utilities{
+  .rt1{
+    direction: rtl;
+  }
+}
 
 ::-webkit-scrollbar {
   display: none;

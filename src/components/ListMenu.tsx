@@ -1,7 +1,13 @@
-import { product } from "../../public/assets.ts";
+import { useContext } from "react";
 import Category from "./Category.tsx";
+import { languageProduct } from "./ContextManagement.tsx";
 
 function ListMenu() {
+
+const LaProduct = useContext(languageProduct);
+
+let product = LaProduct.dataProduct;
+
   let category = "";
 
   return (
