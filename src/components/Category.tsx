@@ -1,8 +1,13 @@
-import { product } from "../../public/assets";
-
+import { useContext } from "react";
 import Product from "./Product";
+import { languageProduct } from "./ContextManagement";
 
 function Category({ category }: any) {
+
+const LaProduct = useContext(languageProduct)
+
+let product=LaProduct.dataProduct
+
   const productItems = product.filter((item) => item.category === category);
 
 
